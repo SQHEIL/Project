@@ -73,3 +73,46 @@ body, html {
 .login-form button:hover {
     background-color: purple;
 }
+
+.glowing-border {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 8px solid transparent;
+    pointer-events: none;
+    animation: colorCycle 6s linear infinite;
+    box-shadow: 0 0 20px 5px purple;
+}
+
+@keyframes colorCycle {
+    0% {
+      box-shadow:
+        0 0 20px 5px purple,
+        0 0 40px 10px purple,
+        0 0 60px 15px purple,
+        0 0 80px 20px purple;
+    }
+    33% {
+      box-shadow:
+        0 0 20px 5px blue,
+        0 0 40px 10px blue,
+        0 0 60px 15px blue,
+        0 0 80px 20px blue;
+    }
+    66% {
+      box-shadow:
+        0 0 20px 5px white,
+        0 0 40px 10px white,
+        0 0 60px 15px white,
+        0 0 80px 20px white;
+    }
+    100% {
+      box-shadow:
+        0 0 20px 5px purple,
+        0 0 40px 10px purple,
+        0 0 60px 15px purple,
+        0 0 80px 20px purple;
+    }
+}
