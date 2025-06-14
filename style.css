@@ -20,6 +20,10 @@ body, html {
     filter: blur(0.5px);
 }
 
+#image2 {
+    width: 20vw;
+    height: 42vh;
+}
 .login-container {
     background-color: white;
     padding: 30px 40px;
